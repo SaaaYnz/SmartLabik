@@ -2,7 +2,7 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/activity_user_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
@@ -35,7 +35,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"
-                android:onClick="onclick"
+                android:onClick="onClick"
+                android:textStyle="bold"
                 android:text="Пропустить"
                 android:textColor="@color/blue"
                 android:textSize="10pt" />
@@ -63,36 +64,36 @@
 
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/custom_input"
             android:hint="Имя"
             android:layout_marginTop="30dp"
             android:paddingStart="5dp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etPatronymic"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/custom_input"
             android:hint="Отчество"
             android:layout_marginTop="10dp"
             android:paddingStart="5dp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etSurname"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/custom_input"
             android:hint="Фамилия"
             android:layout_marginTop="10dp"
             android:paddingStart="5dp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etBirthday"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/custom_input"
             android:hint="Дата рождения"
             android:inputType="date"
@@ -100,9 +101,9 @@
             android:paddingStart="5dp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etSex"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/custom_input"
             android:hint="Пол (М/Ж)"
             android:layout_marginTop="10dp"
@@ -110,17 +111,17 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSubmit"
+            android:id="@+id/btnCreate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/button_enable"
             android:text="Создать"
             android:textColor="@color/white"
             app:backgroundTint="@null"
             app:cornerRadius="4dp"
             android:enabled="false"
-            android:onClick="onclick"
+            android:onClick="onClick"
             app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -18,7 +18,7 @@ public class UserCardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_card);
     }
 
-    public void onclick(View v) {
+    public void onClick(View v) {
         Intent i = new Intent(UserCardActivity.this, PageAnaliseActivity.class);
         startActivity(i);
     }
