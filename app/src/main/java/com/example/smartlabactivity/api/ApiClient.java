@@ -9,7 +9,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    // Исправьте URL на ваш сервер
     private static final String BASE_URL = "http://2.nntc.nnov.ru:8900/";
 
     private static Retrofit retrofit;

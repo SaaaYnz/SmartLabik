@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -124,5 +125,10 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private boolean isValidPassword(String password) {
         return !password.isEmpty() && password.length() >= 8;
+    }
+
+    public void clickOnLoginButton(View view) {
+        Intent intent = new Intent(RegistrationActivity.this, AuthActivity.class);
+        startActivity(intent);
     }
 }

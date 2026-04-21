@@ -84,18 +84,30 @@
             android:enabled="false"
             android:textColor="@color/white"
             android:background="@drawable/button_enable"
-            android:text="Далее"
+            android:text="Зарегистрироваться"
             app:cornerRadius="4dp"
             app:backgroundTint="@null"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:background="@drawable/blue_border"
+            android:text="У меня уже есть аккаунт"
+            android:onClick="clickOnLoginButton"
+            app:cornerRadius="4dp"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="@color/gray"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="130dp"
             android:text="Или войдите с помощью"/>
 
         <com.google.android.material.button.MaterialButton
